@@ -261,7 +261,7 @@ public class OrderDaoImpl extends BaseDaoIml<Order> {//采用两个表储存信�
     }
 
     @Override
-    public ArrayList<Order> getByAmountAbove(int amount) {
+    public ArrayList<Order> getByAmountAbove(double amount) {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -288,7 +288,7 @@ public class OrderDaoImpl extends BaseDaoIml<Order> {//采用两个表储存信�
     }
 
     @Override
-    public ArrayList<Order> getByAmountBelow(int amount) {
+    public ArrayList<Order> getByAmountBelow(double amount) {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;

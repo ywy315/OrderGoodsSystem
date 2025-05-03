@@ -40,9 +40,9 @@ public abstract class BaseDaoIml<E> {
 
     public abstract E getById(int id);//通过id获取
 
-    public abstract ArrayList<E> getByAmountAbove(int amount);//获取特定金额以上
+    public abstract ArrayList<E> getByAmountAbove(double amount);//获取特定金额以上
 
-    public abstract ArrayList<E> getByAmountBelow(int amount);//获取特定金额以下
+    public abstract ArrayList<E> getByAmountBelow(double amount);//获取特定金额以下
 
     public abstract ArrayList<E> getByPage(int pagenum, int linage);//页数，每页行数
 

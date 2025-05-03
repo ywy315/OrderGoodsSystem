@@ -9,6 +9,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class GoodsDaoImpl extends BaseDaoIml<Goods> {
 
@@ -127,7 +128,7 @@ public class GoodsDaoImpl extends BaseDaoIml<Goods> {
     }
 
     @Override
-    public ArrayList<Goods> getByAmountAbove(int amount) {
+    public ArrayList<Goods> getByAmountAbove(double amount) {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -154,7 +155,7 @@ public class GoodsDaoImpl extends BaseDaoIml<Goods> {
     }
 
     @Override
-    public ArrayList<Goods> getByAmountBelow(int amount) {
+    public ArrayList<Goods> getByAmountBelow(double amount) {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
